@@ -1,0 +1,235 @@
+a {
+  text-decoration: none !important; 
+}
+
+
+
+.dropdown-menu-dark {
+  
+  a {
+    color: $color-white-01;
+  }
+}
+
+.dropdown-toggle:after {
+  color: $color-white-01;
+}
+
+.navbar-white {
+
+  .logo {
+    width: 6.875rem; 
+    height: 5.063rem;
+  }
+}
+
+.navbar {
+  background: $color-black-02;
+
+  .nav {
+    min-height: 0 !important;
+    padding-top: 0;
+    padding-bottom: 0;
+      
+    .nav-linkutton {
+      margin-top: 0.17rem;
+      border: none;
+      font: inherit;
+      color: inherit;
+      background-color: transparent;
+      cursor: pointer;
+
+      font-family: $font-montserrat;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 0.875em;
+      text-transform: uppercase;
+      color: $color-white-01;
+    }
+  }
+
+  .container {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  .btn-primary:focus {
+    box-shadow: none;
+  }
+
+  .btn-primary {
+    background-color:$color-blue-01;
+    border: none;
+    border-radius: 0;
+    height: 3.75rem;
+
+    span {
+      font-family: $font-montserrat;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 0.875em;
+      line-height: 1.0625em;
+      text-transform: uppercase;
+      color: $color-white-01;
+    }
+
+    i {
+      margin-bottom: 2px;
+    }
+  }
+
+  .nav-link {
+    span {
+      font-family: $font-montserrat;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 0.875em;
+      line-height: 1.0625em;
+      text-transform: uppercase;
+      color: $color-white-01;
+    }
+  }
+}
+
+
+  
+@media screen and (max-width: 991px) {
+  .navbar{
+
+    .navbar-toggler-bar+.navbar-toggler-bar {
+      margin-top: 7px;
+    }
+
+    .navbar-translate {
+      width: 100%;
+      position: relative;
+      display: flex;
+      justify-content: space-between !important;
+      align-items: center;
+      transform: translate3d(0px, 0, 0);
+      transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
+    }
+    
+    // Toggle
+    .navbar-toggler {
+      width: 37px;
+      height: 27px;
+      outline: 0;
+      opacity: .8;
+      cursor: pointer;
+      box-shadow: none !important;
+
+      .middle-bar {
+        width: 17px; 
+      }
+    }
+
+    .navbar-toggler:hover {
+
+      .middle-bar {
+        width: 22px;
+      }
+    }
+
+    .navbar-toggler-bar {
+      display: block;
+      position: relative;
+      width: 22px;
+      height: 1px;
+      border-radius: 1px;
+      background: $color-white-01;
+      transition: all 0.2s;
+    }
+  }
+}
+  
+  
+@media screen and (max-width: 991px) {
+
+  .navbar-collapse {
+    position: fixed;
+    display: block !important;
+
+    top: 0;
+    right: 0;
+
+    height: 100% !important;
+    width: 300px;
+
+    z-index: 1032;
+
+    visibility: visible;
+    overflow-y: visible;
+    
+    background-color: $color-blue-01;
+    border-top: none;
+    
+    text-align: left;
+    max-height: none !important;
+
+    transform: translate3d(300px, 0, 0);
+    transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
+
+    .nav {
+      margin-top: 18vh;
+      flex-direction: column;
+      align-content: center;
+    }
+  }
+  
+  // Background navbar
+  .navbar-collapse:before {
+    content: "";
+    width: 300px;
+    background: $color-black-02;
+    opacity: 0.76;
+    filter: alpha(opacity=76);
+    display: block;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  
+  .navbar-collapse {
+
+    .navbar-nav:not(.navbar-logo) {
+
+      .nav-link {
+        margin: 0 1rem;
+        margin-top: 0.3125rem;
+      }
+    }
+  } 
+  
+  // Position navbar
+  .navbar-nav {
+    margin-top: 53px;
+    position: relative;
+    max-height: calc(100vh - 75px);
+    min-height: 100%;
+    overflow: auto;
+    align-items: flex-start !important;
+  }
+}
+
+// Hiden name links
+@media (min-width: 992px) {
+
+  .navbar-expand-lg {
+
+    .d-xl-none {
+      display: none;
+    }
+  }
+}
+
+// Opening navbar
+.nav-open {
+  transform: translate3d(0px, 0, 0);
+}
+
+.menu-on-left {
+  transform: translate(-300px, 0%) !important;
+}

@@ -1,0 +1,118 @@
+.duo2 {
+    position: relative;
+    padding-top: 5.063rem;
+    padding-bottom: 8.438rem;
+    
+    .duo2-image {
+        position: absolute;
+        z-index: -1;
+    }
+
+    .duo2-image:nth-child(1) {
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100%;
+        background: url(../img/vape-blue.jpg);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: 100% 100%;
+    }
+
+    .duo2-image:nth-child(2) {
+        top: 1px;
+        right: 0;
+        width: 50%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.06);
+        background-image: url(../img/logo-bg.png);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: 100% 100%;
+        transform: rotateY(180deg);
+    }
+
+    h2 {
+        font-family: $font-audiowide;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.875em;
+        line-height: 138.5%;
+        text-transform: uppercase;
+        color: $color-black-03;
+    }
+
+    p {
+        margin-top: 1.625rem;
+        font-family: $font-montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1em;
+        line-height: 1.8125em;
+        letter-spacing: -0.025em;
+        color: $color-black-03;
+    }
+
+    button {
+        margin-top:1.563rem;
+    }
+
+    .col-5 {
+        padding: 0;
+    }
+} 
+
+.duo2-2 {
+
+    .duo2-image:nth-child(1) {
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.06);
+        background-image: url(../img/logo-bg.png);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: 100% 100%;
+    }
+
+    .duo2-image:nth-child(2) {
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 100%;
+        background: url(../img/vape-fresh.jpg);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: 100% 100%;
+    }
+}
+
+@media screen and (max-width:1040px) {
+
+    .duo2 h2 {
+        font-size: 1.475em;
+    }
+
+    .duo2 p {
+        font-size: 0.8em;
+    }
+
+    .duo2 {
+
+        .duo2-image:nth-child(1) {
+            width: 0%;
+            height: 0%;
+            background: none;
+        }
+        
+        .duo2-image:nth-child(2) {
+            width: 100%;
+            height: 100%;
+            background-image: url(../img/logo-bg.png);
+            background-repeat: no-repeat;
+            background-position: top;
+            background-size: 100% 100%;
+        }
+    }
+}

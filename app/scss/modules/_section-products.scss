@@ -1,0 +1,103 @@
+.products {
+
+    padding-top: 3.188rem;
+
+    .nav {
+
+        button {
+            font-family: $font-montserrat;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 1.25em;
+            line-height: 122%;
+            color: $color-black-02;
+
+            padding: 0.688rem 0.875rem;
+            background: none;
+            border: 2px solid rgba(116, 182, 199, 0);
+            outline: none;
+        }
+      
+        button:focus {
+
+            span {
+                color:$color-blue-01;
+            }
+
+            border: 2px solid $color-blue-01;
+        }
+
+        button:not(:last-child) {
+            margin-right: 0.688rem;
+        }
+    }
+}
+
+.products-grid {
+    padding-bottom: 5.313rem;
+    
+    .button-global {
+        margin-top: 3.438rem;
+    }
+}
+
+.card-product {
+    padding: 0 1.688rem;
+    margin-top: 4.063rem;
+    padding-top: 0.375rem;
+    height: 28rem;
+
+    .discount {
+
+        width: 100%;
+
+        > span {
+            border: 2px solid $color-blue-01;
+            padding: 0.313rem 0.563rem;
+            font-family: 'Work Sans';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1em;
+            line-height: 1.1875em;
+            color: $color-blue-01;
+        }
+
+        span:last-child {
+            border-color: $color-black-02;
+            color: $color-black-02;
+        }
+    }
+
+    h2 {
+        font-family: $font-montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.125em;
+        line-height: 1.375em;
+        text-align: center;
+        color: $color-black-02;
+    }
+
+    .cost {
+
+        > span {
+            font-family: inherit;
+            font-style: inherit;
+            font-weight: 700;
+            font-size: inherit;
+            line-height: inherit;
+            color: $color-blue-01;
+            margin-right: 0.313rem;
+        }
+
+        span:last-child {
+            font-family: inherit;
+            font-style: inherit;
+            font-weight: 400;
+            font-size: 0.75em;
+            line-height: 0.9375em;
+            text-decoration-line: line-through;
+            color: $color-black-01;
+        }
+    }
+}

@@ -1,0 +1,167 @@
+.section-duo {
+
+    padding-top: 3.125rem;
+    padding-bottom: 5.438rem;
+    background-color: $color-black-03;
+
+    h3 {
+        font-family: $font-work-sans;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.125em;
+        line-height: 1.3125em;
+        color: $color-white-01;
+    }
+
+    button:hover {
+        border: none;
+        background-color: transparent;
+    }
+
+    button {
+        border: none;
+        border-radius: 0;
+        font: inherit;
+        color: inherit;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    button:nth-child(1) {
+
+        i {
+            margin-right: 1px;
+        }
+
+        background-color: $color-white-01;
+    }
+
+    button:nth-child(2) {
+
+        i {
+            margin-left: 1px;
+        }
+
+        background-color: $color-blue-01
+    }
+
+
+    .container {
+
+        .img-thumbnail {
+            padding: 0 !important;
+            background-color: transparent !important;
+            border: none !important;
+            border-radius: 0 !important;
+        }
+
+        .row-discount {
+            padding-top: 2.25rem;
+        }
+
+        .card-discount-border {
+            background-color: $color-white-01;
+            padding: 0.938rem;
+            clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%, 0 10%);
+        }
+
+        .card-discount {
+            padding-top: 4.375rem;
+            padding-bottom: 3.375rem;
+            background-color: $color-white-01;
+            clip-path: polygon(14.7% 0, 100% 0, 100% 100%, 0 100%, 0 9.7%);
+
+            h2 {
+                font-family: $font-montserrat;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 2em;
+                line-height: 1.2em;
+                text-align: center;
+                color: $color-black-02;
+            }
+
+            span {
+                font-family: $font-montserrat;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 1em;
+                line-height: 1.4375em;
+                color: $color-blue-01;
+            }
+
+            span ~ span {
+                margin-left: 0.563rem;
+                font-family: $font-montserrat;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 0.75em;
+                line-height: 1.4375em;
+                text-decoration-line: line-through;
+                color: rgba(0, 0, 0, 0.25);
+            }
+            
+            p {
+                font-family: $font-montserrat;
+                margin-top: 1.191rem;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 1em;
+                line-height: 1.75em;
+                text-align: center;
+                color: $color-black-02;
+            }
+        }
+    }
+}
+
+.timer {
+
+    * {
+        font-family: $font-montserrat;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 1.375em;
+        color: $color-black-01 !important;
+    }
+
+    .timer-cell {
+        width: 5.25rem;
+        height: 5.25rem;
+        border: 2px solid $color-black-01;
+        border-radius: 50%;
+        font-size: 2em;
+    }
+
+    .timer-date {
+        font-size: 1em;
+    }
+}
+
+.dots {
+    margin: 0rem 0.56rem 1.438rem 0.56rem;
+}
+
+@media screen and (max-width:460px) {
+
+    .card-discount {
+
+        h2 {
+            font-size: 1.8em !important;
+        }
+
+        p {
+            font-size: 0.8em !important;
+        }
+
+        .timer .timer-cell {
+            width: 3.35rem;
+            height: 3.35rem;
+            font-size: 1.4em;
+        }
+    }
+    
+    .dots {
+        margin: 0rem 0.36rem 1.438rem 0.36rem;
+    }
+}

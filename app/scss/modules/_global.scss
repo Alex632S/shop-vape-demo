@@ -1,0 +1,53 @@
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+$font-helvetica: 'Helvetica';
+$font-montserrat: 'Montserrat';
+$font-audiowide: 'Audiowide';
+$font-work-sans: 'Work Sans';
+
+$color-black-01: #121212;
+$color-black-02: #2B2B2B;
+$color-black-03: #313A47;
+$color-grey-01: #414141;
+$color-grey-02: #474747;
+$color-white-01: #FFFFFF;
+$color-blue-01:#74B6C7;
+
+.button-global {
+
+    button {
+
+        background-color: $color-black-03!important;
+        padding: 0.86rem 2.813rem;
+        border-radius: 0;
+
+        span {
+            font-family: $font-montserrat;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 0.99713125em;
+            line-height: 1.75em;
+            text-transform: uppercase;
+            color: $color-white-01 !important;
+        }
+    }
+
+    @media screen and (max-width: 1040px) {
+
+        span {
+            font-size: 0.797131em !important;
+            line-height: .75em !important;
+        }
+    }
+}
+
+.img-thumbnail {
+    border: none !important; 
+    border-radius: 0 !important; 
+}

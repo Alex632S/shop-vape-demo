@@ -1,0 +1,147 @@
+nav.navbar.navbar-expand-lg
+
+    .container.justify-content-start
+    
+        .col-1.navbar-translate
+            a.navbar-brand(href='javascript:void(0);')
+            button.navbar-toggler(type='button' data-toggle='collapse' aria-label='Toggle navigation')
+                span.navbar-toggler-bar.top-bar
+                span.navbar-toggler-bar.middle-bar
+                span.navbar-toggler-bar.bottom-bar
+
+        .col-10.justify-content-end.navbar-collapse.collapse.show    
+
+            ul.nav
+            
+                li.nav-item.navbar-item
+                    a.nav-link.active(href="#" target="_self")
+                        span Home         
+
+                li.nav-item.navbar-item
+                    .dropdown
+                        a#dropdownMenuLink.dropdown-toggle.nav-link(href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false')
+                            span Rolling
+
+                        ul.dropdown-menu.dropdown-menu-dark(aria-labelledby='dropdownMenuLink')
+
+                            li.dropdown-item
+                                a(href='#') Papers
+                            li.dropdown-item
+                                a(href='#') Blunt/Hemp Wraps
+                            li.dropdown-item
+                                a(href='#') Pre-Rolled Blunts &amp; Cones
+                            li.dropdown-item
+                                a(href='#') Tips
+                            li.dropdown-item
+                                a(href='#') RAW Products
+                            li.dropdown-item
+                                a(href='#') Grinders
+                            li.dropdown-item
+                                a(href='#') Bowls &amp; Trays
+                            li.dropdown-item
+                                a(href='#') Ashtrays
+                            li.last.dropdown-item
+                                a(href='#') Accessories
+
+                li.nav-item.navbar-item
+                    .dropdown
+                        a#dropdownMenuLink.dropdown-toggle.nav-link(href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false')
+                            span Bongs, Rigs, Quartz &amp; Parts
+
+                        ul.dropdown-menu.dropdown-menu-dark(aria-labelledby='dropdownMenuLink')
+                            
+                            li.dropdown-item
+                                a(href='#') 
+                                    span Under $100
+                            li.dropdown-item
+                                a(href='#') 
+                                    span $100-$200
+                            li.dropdown-item
+                                a(href='#') 
+                                    span Australian Glass
+                            li.dropdown-item
+                                a(href='#') 
+                                    span American Glass
+                            li.dropdown-item
+                                a(href='#') 
+                                    span German Glass
+                            li.dropdown-item
+                                a(href='#') 
+                                    span Straight Tubes
+                            li.dropdown-item
+                                a(href='#') 
+                                    span Beakers
+                            li.dropdown-item
+                                a(href='#') 
+                                    span Classic/Bubble Base
+                            li.dropdown-item
+                                a(href='#') 
+                                    span Dab Rigs
+                            li.dropdown-item
+                                a(href='#') 
+                                    span Dab Rig Kits
+                            li.dropdown-item.last
+                                a(href='#') 
+                                    span Ash Catchers &amp; Chambers
+
+                li.nav-item.navbar-item
+                    .dropdown
+                        a#dropdownMenuLink.dropdown-toggle.nav-link(href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false')
+                            span Vapes
+
+                        ul.dropdown-menu.dropdown-menu-dark(aria-labelledby='dropdownMenuLink')
+                            
+                            li.dropdown-item
+                                a(href='#') 
+                                    span Herb
+                            li.dropdown-item
+                                a(href='#') 
+                                    span Desktop
+                            li.dropdown-item
+                                a(href='#') 
+                                    span Portable
+                            li.dropdown-item.last
+                                a(href='#') 
+                                    span Accessories
+                            li.dropdown-item
+                                a(href='#') 
+                                    span Concentrate
+
+                li.nav-item.navbar-item
+                    a.nav-link(href="#" target="_self")
+                        span Contact Us         
+                li.nav-item.navbar-item
+                    a.nav-link(href="#" target="_self")
+                        span About us         
+                li.nav-item.navbar-item
+                    a.nav-link(href="#" target="_self" style="padding-right:0;")
+                        span Blog                
+        
+.navbar-white.py-3
+
+    .container
+
+        .row.align-items-center.justify-content-between.flex-column.align-items-center.flex-lg-row.gap-md-4.gap-xs-4.gap-lg-0.gap-3
+
+            .col-lg-2.text-lg-start.text-center
+
+                a(href="#" target="_self")
+                    i 
+                        include ../svg/logo.pug
+
+            .col-lg-4.col-md-12.d-flex.flex-lg-column.align-item-lg-end.align-items-center.flex-xs-row.flex-column.gap-lg-0.gap-3
+
+                form.form-inline.ms-lg-5.align-self-lg-end
+
+                    .form-group.d-flex.align-items-center
+                        label.sr-only(for='inputSearch')
+                        input#inputSearch.form-control.rounded-pill(type='search' placeholder='Search here...')
+                        
+                .d-flex.justify-content-lg-end.mt-lg-2.align-self-lg-end
+                
+                    .status
+                        span.session
+                            a#customer_login_link.text-secondary(href='#') Sign in
+                            span.mx-1 or
+
+                        a.checkout.text-secondary(href='#') Checkout

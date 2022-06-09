@@ -1,0 +1,71 @@
+.footer {
+    
+    background-color: $color-black-01;
+
+    * {
+        color: $color-white-01;
+    }
+
+    .content {
+
+        path {
+            fill: $color-white-01;
+        }
+
+        p {
+            font-family: $font-helvetica;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 0.875em;
+            line-height: 1.5em;
+            letter-spacing: 0.01em;
+        }
+    }
+
+    .content:nth-child(2), .content:nth-child(3) {
+
+        .content-item:not(:first-child) {
+            margin-top: 1.438rem;
+        }
+
+        .content-item {
+
+            h6, 
+            span {
+                font-family: $font-montserrat;
+                text-transform: uppercase;
+                font-style: normal;
+            }
+
+            h6 {
+                font-weight: 700;
+                font-size:  1.25em;
+                line-height: 2.0625em;
+                letter-spacing: 0.01em;
+            }
+
+            span {
+                font-weight: 500;
+                font-size: 0.875em;
+                line-height: 1.5em;
+            }
+        }
+    }
+
+    .map {
+
+        iframe {
+            max-width: 21.875rem;
+            height: 12.5rem;
+        }
+    }
+}
+
+@media screen and (max-width:460px) {
+
+    .map {
+        iframe {
+            width: 100%;
+        }
+    }
+}

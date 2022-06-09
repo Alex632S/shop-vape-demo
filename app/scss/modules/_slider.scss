@@ -1,0 +1,90 @@
+.slider {
+
+    position: relative;
+    padding-top: 2.875rem;
+    margin-bottom: 7.5rem;
+
+    .card-product {
+
+        margin-top: 2.75rem;
+
+        h2 {
+            font-weight: 600;
+            font-size: 1.125em;
+            line-height: 1.375em;
+        }
+    }
+
+    h2 {
+        font-family: $font-montserrat;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.375em;
+        line-height: 1.4375em;
+        color: $color-black-02;
+        text-align: center;
+    }
+
+    p {
+        font-family: $font-montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 150.9%;
+        text-align: center;
+        color: $color-black-02;
+    }
+
+    .slick-dots {
+        position: absolute;
+        bottom: -4rem;
+        left: 50%;
+        right: 50%;
+
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 11px;
+        margin: 0;
+
+        li {
+            list-style-type: none;
+            background: $color-grey-02;
+            opacity: 0.3;
+
+            width: 11px;
+            height: 11px;
+            border-radius: 50%;
+            
+            button {
+                border: none;
+                background: none;
+                font-size: 0;
+            }
+        }
+
+        .slick-active {
+            transform: scale(1.4);
+            background: $color-blue-01;
+        }
+    }
+
+    .slick-arrow {
+        border: none;
+        font-size: 0;
+        background: none;
+    }
+
+    .slick-next, 
+    .slick-prev {
+
+       background-image: url(../img/arrow.svg);
+       width: 0.784rem;
+       height: 1.381rem;
+    }
+
+    .slick-prev {
+        transform: rotateZ(180deg);
+    }
+}
